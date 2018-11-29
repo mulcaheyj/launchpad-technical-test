@@ -9,7 +9,7 @@ public class GameOver : MonoBehaviour {
 	{
 			if(other.tag == "Player")
 			{
-				SceneManager.LoadScene("Dragon Chase");
+				SceneManager.LoadScene("Dragon Chase"); //restarts the level if the player is touched by the dragon
 			}
 		
 	}

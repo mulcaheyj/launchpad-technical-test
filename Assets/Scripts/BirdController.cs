@@ -35,7 +35,7 @@ public class BirdController : MonoBehaviour {
 		if(Input.GetKey(KeyCode.S))
 			transform.Rotate(Vector3.left * (Time.fixedDeltaTime * rotationSpeed), Space.Self); //lets the player pitch up (inverted)
 
-		if (Input.GetKeyDown (KeyCode.Space))
+		if (Input.GetKeyDown (KeyCode.Space)) //these four lines of code will allow the player to increase their speed!
 			movementSpeed = boostSpeed;
 
 		if (Input.GetKeyUp (KeyCode.Space))

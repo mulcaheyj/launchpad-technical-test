@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DragonFollow : MonoBehaviour {
 
-	public GameObject Player;
-	public float movementSpeed = 4;
+	public GameObject Player; //sets which gameobject to look at
+	public float movementSpeed = 4; //allows movement speed to be customised in editor
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +15,7 @@ public class DragonFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.LookAt (Player.transform);
-		transform.position += transform.forward * movementSpeed * Time.deltaTime;
+		transform.LookAt (Player.transform); //makes the dragon look at the player
+		transform.position += transform.forward * movementSpeed * Time.deltaTime; //makes the dragon constantly move towards the player
 	}
 }

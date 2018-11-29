@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
-	// Use this for initialization
+	// this allows the player to reload the game in the win screen
 	public void LoadScene() 
 	{
 		SceneManager.LoadScene ("dragon chase");
